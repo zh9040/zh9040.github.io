@@ -92,8 +92,35 @@ w3-sidenav{
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>The best tutors in the world.</p>
     <p>
+      <form action="https://formspree.io/zhuang9040@gmail.com" method = "POST" target="_blank">
+      <div class="w3-group">
+        <label>Name</label>
+        <input id = "name" class="w3-input w3-border" type="text" placeholder = "Enter your Name" name="Name" required>
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input id = "email" class="w3-input w3-border" type="text" placeholder = "Enter your Email" name="Email" required>
+      </div>
+      <div class="w3-group">
+        <label>Grade</label>
+        <input id = "grade" class="w3-input w3-border" placeholder = "Enter your Message" type="text" name="Grade" required>
+      </div>
+      <div class="w3-group">
+        <label>Phone Number</label>
+        <input id = "grade" class="w3-input w3-border" placeholder = "Enter your Message" type="text" name="Phone" required>
+      </div>
+      <div class="w3-group">
+        <label>What Do You Need Help With?</label>
+        <input id = "grade" class="w3-input w3-border" placeholder = "Enter your Message" type="text" name="Help" required>
+      </div>
+      <div class="w3-group">
+        <label>Why Do You Want Tutoring?</label>
+        <input id = "grade" class="w3-input w3-border" placeholder = "Enter your Message" type="text" name="Help" required>
+      </div>
+      <input type="hidden" name="_next" value="https://zh9040.github.io/" />
+      <button onclick ="sendMail() return false" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom" >Send Message</button>
+    </form>  
     </p>
-    <p><b>Our tutors are a bit better than average.</b>:</p>
   </div>
 
  
@@ -182,4 +209,5 @@ function w3_close() {
 
 </body>
 </html>
+
 
