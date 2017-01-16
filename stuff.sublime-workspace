@@ -1,0 +1,252 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "template.html",
+			"settings":
+			{
+				"buffer_size": 6790,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<title>W3.CSS Template</title>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"stylesheet\" href=\"http://www.w3schools.com/lib/w3.css\">\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Poppins\">\n<style>\nbody,h1,h2,h3,h4,h5 {font-family: \"Poppins\", sans-serif}\nbody {font-size:16px;}\n.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}\n.w3-half img:hover{opacity:1}\n</style>\n<body>\n\n<!-- Sidenav/menu -->\n<nav class=\"w3-sidenav w3-red w3-collapse w3-top w3-large w3-padding\" style=\"z-index:3;width:300px;font-weight:bold\" id=\"mySidenav\"><br>\n  <a href=\"javascript:void(0)\" onclick=\"w3_close()\" class=\"w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white\" style=\"width:100%;font-size:22px\">Close Menu</a>\n  <div class=\"w3-container\">\n    <h3 class=\"w3-padding-64\"><b>Company<br>Name</b></h3>\n  </div>\n  <a href=\"#\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Home</a> \n  <a href=\"#showcase\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Showcase</a> \n  <a href=\"#services\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Services</a> \n  <a href=\"#designers\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Designers</a> \n  <a href=\"#packages\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Packages</a> \n  <a href=\"#contact\" onclick=\"w3_close()\" class=\"w3-padding w3-hover-white\">Contact</a>\n</nav>\n\n<!-- Top menu on small screens -->\n<header class=\"w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding\">\n  <a href=\"javascript:void(0)\" class=\"w3-btn w3-red w3-border w3-border-white w3-margin-right\" onclick=\"w3_open()\">☰</a>\n  <span>Company Name</span>\n</header>\n\n<!-- Overlay effect when opening sidenav on small screens -->\n<div class=\"w3-overlay w3-hide-large\" onclick=\"w3_close()\" style=\"cursor:pointer\" title=\"close side menu\" id=\"myOverlay\"></div>\n\n<!-- !PAGE CONTENT! -->\n<div class=\"w3-main\" style=\"margin-left:340px;margin-right:40px\">\n\n  <!-- Header -->\n  <div class=\"w3-container\" style=\"margin-top:80px\" id=\"showcase\">\n    <h1 class=\"w3-jumbo\"><b>Interior Design</b></h1>\n    <h1 class=\"w3-xxxlarge w3-text-red\"><b>Showcase.</b></h1>\n    <hr style=\"width:50px;border:5px solid red\" class=\"w3-round\">\n  </div>\n  \n  <!-- Photo grid (modal) -->\n  <div class=\"w3-row-padding\">\n    <div class=\"w3-half\">\n      <img src=\"/w3images/kitchenconcrete.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"Concrete meets bricks\">\n      <img src=\"/w3images/livingroom.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"Light, white and tight scandinavian design\">\n      <img src=\"/w3images/diningroom.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"White walls with designer chairs\">\n    </div>\n\n    <div class=\"w3-half\">\n      <img src=\"/w3images/atrium.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"Windows for the atrium\">\n      <img src=\"/w3images/bedroom.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"Bedroom and office in one space\">\n      <img src=\"/w3images/livingroom2.jpg\" style=\"width:100%\" onclick=\"onClick(this)\" alt=\"Scandinavian design\">\n    </div>\n  </div>\n\n  <!-- Modal for full size images on click-->\n  <div id=\"modal01\" class=\"w3-modal w3-black w3-padding-0\" onclick=\"this.style.display='none'\">\n    <span class=\"w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright\">×</span>\n    <div class=\"w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64\">\n      <img id=\"img01\" class=\"w3-image\">\n      <p id=\"caption\"></p>\n    </div>\n  </div>\n\n  <!-- Services -->\n  <div class=\"w3-container\" id=\"services\" style=\"margin-top:75px\">\n    <h1 class=\"w3-xxxlarge w3-text-red\"><b>Services.</b></h1>\n    <hr style=\"width:50px;border:5px solid red\" class=\"w3-round\">\n    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>\n    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure\n    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor\n    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n    </p>\n  </div>\n  \n  <!-- Designers -->\n  <div class=\"w3-container\" id=\"designers\" style=\"margin-top:75px\">\n    <h1 class=\"w3-xxxlarge w3-text-red\"><b>Designers.</b></h1>\n    <hr style=\"width:50px;border:5px solid red\" class=\"w3-round\">\n    <p>The best team in the world.</p>\n    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure\n    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor\n    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n    </p>\n    <p><b>Our designers are thoughtfully chosen</b>:</p>\n  </div>\n\n  <!-- The Team -->\n  <div class=\"w3-row-padding w3-grayscale\">\n    <div class=\"w3-col m4 w3-margin-bottom\">\n      <div class=\"w3-light-grey\">\n        <img src=\"/w3images/team2.jpg\" alt=\"John\" style=\"width:100%\">\n        <div class=\"w3-container\">\n          <h3>John Doe</h3>\n          <p class=\"w3-opacity\">CEO & Founder</p>\n          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"w3-col m4 w3-margin-bottom\">\n      <div class=\"w3-light-grey\">\n        <img src=\"/w3images/team1.jpg\" alt=\"Jane\" style=\"width:100%\">\n        <div class=\"w3-container\">\n          <h3>Jane Doe</h3>\n          <p class=\"w3-opacity\">Designer</p>\n          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"w3-col m4 w3-margin-bottom\">\n      <div class=\"w3-light-grey\">\n        <img src=\"/w3images/team3.jpg\" alt=\"Mike\" style=\"width:100%\">\n        <div class=\"w3-container\">\n          <h3>Mike Ross</h3>\n          <p class=\"w3-opacity\">Architect</p>\n          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Packages / Pricing Tables -->\n  <div class=\"w3-container\" id=\"packages\" style=\"margin-top:75px\">\n    <h1 class=\"w3-xxxlarge w3-text-red\"><b>Packages.</b></h1>\n    <hr style=\"width:50px;border:5px solid red\" class=\"w3-round\">\n    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>\n  </div>\n\n  <div class=\"w3-row-padding\">\n    <div class=\"w3-half w3-margin-bottom\">\n      <ul class=\"w3-ul w3-light-grey w3-center\">\n        <li class=\"w3-dark-grey w3-xlarge w3-padding-32\">Basic</li>\n        <li class=\"w3-padding-16\">Floorplanning</li>\n        <li class=\"w3-padding-16\">10 hours support</li>\n        <li class=\"w3-padding-16\">Photography</li>\n        <li class=\"w3-padding-16\">20% furniture discount</li>\n        <li class=\"w3-padding-16\">Good deals</li>\n        <li class=\"w3-padding-16\">\n          <h2>$ 199</h2>\n          <span class=\"w3-opacity\">per room</span>\n        </li>\n        <li class=\"w3-light-grey w3-padding-24\">\n          <button class=\"w3-btn w3-white w3-padding-large w3-hover-black\">Sign Up</button>\n        </li>\n      </ul>\n    </div>\n        \n    <div class=\"w3-half\">\n      <ul class=\"w3-ul w3-light-grey w3-center\">\n        <li class=\"w3-red w3-xlarge w3-padding-32\">Pro</li>\n        <li class=\"w3-padding-16\">Floorplanning</li>\n        <li class=\"w3-padding-16\">50 hours support</li>\n        <li class=\"w3-padding-16\">Photography</li>\n        <li class=\"w3-padding-16\">50% furniture discount</li>\n        <li class=\"w3-padding-16\">GREAT deals</li>\n        <li class=\"w3-padding-16\">\n          <h2>$ 249</h2>\n          <span class=\"w3-opacity\">per room</span>\n        </li>\n        <li class=\"w3-light-grey w3-padding-24\">\n          <button class=\"w3-btn w3-red w3-padding-large w3-hover-black\">Sign Up</button>\n        </li>\n      </ul>\n    </div>\n  </div>\n  \n  <!-- Contact -->\n  <div class=\"w3-container\" id=\"contact\" style=\"margin-top:75px\">\n    <h1 class=\"w3-xxxlarge w3-text-red\"><b>Contact.</b></h1>\n    <hr style=\"width:50px;border:5px solid red\" class=\"w3-round\">\n    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>\n    <form action=\"form.asp\" target=\"_blank\">\n      <div class=\"w3-group\">\n        <label>Name</label>\n        <input class=\"w3-input w3-border\" type=\"text\" name=\"Name\" required>\n      </div>\n      <div class=\"w3-group\">\n        <label>Email</label>\n        <input class=\"w3-input w3-border\" type=\"text\" name=\"Email\" required>\n      </div>\n      <div class=\"w3-group\">\n        <label>Message</label>\n        <input class=\"w3-input w3-border\" type=\"text\" name=\"Message\" required>\n      </div>\n      <button type=\"submit\" class=\"w3-btn-block w3-padding-large w3-red w3-margin-bottom\">Send Message</button>\n    </form>  \n  </div>\n\n<!-- End page content -->\n</div>\n\n<!-- W3.CSS Container -->\n<div class=\"w3-light-grey w3-container w3-padding-32\" style=\"margin-top:75px;padding-right:58px\"><p class=\"w3-right\">Powered by <a href=\"http://www.w3schools.com/w3css/default.asp\" title=\"W3.CSS\" target=\"_blank\" class=\"w3-hover-opacity\">w3.css</a></p></div>\n\n<script>\n// Script to open and close sidenav\nfunction w3_open() {\n    document.getElementById(\"mySidenav\").style.display = \"block\";\n    document.getElementById(\"myOverlay\").style.display = \"block\";\n}\n \nfunction w3_close() {\n    document.getElementById(\"mySidenav\").style.display = \"none\";\n    document.getElementById(\"myOverlay\").style.display = \"none\";\n}\n\n// Modal Image Gallery\nfunction onClick(element) {\n  document.getElementById(\"img01\").src = element.src;\n  document.getElementById(\"modal01\").style.display = \"block\";\n  var captionText = document.getElementById(\"caption\");\n  captionText.innerHTML = element.alt;\n}\n</script>\n\n</body>\n</html>\n",
+			"settings":
+			{
+				"buffer_size": 10869,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/project/project.html",
+		"/E/project/styles.css",
+		"/E/project/project",
+		"/E/project/stuff",
+		"/E/lab5/lab5.html",
+		"/E/lab5/d",
+		"/E/lab5/e",
+		"/E/lab5/lab5.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"red",
+			"contact",
+			"showcase"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5069,
+								5069
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								10869
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3870.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "stuff",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
