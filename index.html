@@ -43,7 +43,7 @@ w3-sidenav{
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:30px;" id="showcase">
-    <h1 class="w3-jumbo"><img src= "xyzlogo.png" style="width:70%, margin-right: 300px;height:228px;"></h1>
+    <h1 class="w3-jumbo"><img src= "xyzlogo.png" style="width:80%, margin-right: 300px;height:228px;"></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Sam is really rude.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -158,7 +158,7 @@ w3-sidenav{
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+      <button type="sendMail" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
   </div>
 
@@ -175,6 +175,15 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+}
+function sendMail() {
+    var link = "mailto:me@example.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+
+    window.location.href = link;
 }
 </script>
 
