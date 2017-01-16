@@ -43,7 +43,7 @@ w3-sidenav{
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:30px;" id="showcase">
-    <h1 class="w3-jumbo"><img src= "xyzlogo.png" style="width:60%;height:228px;"></h1>
+    <h1 class="w3-jumbo"><img src= "xyzlogo.png" style="width:80%, margin-right: 300px;height:228px;"></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Sam is really rude.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -148,15 +148,15 @@ w3-sidenav{
     <form action="form.asp" target="_blank">
       <div class="w3-group">
         <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+        <input id = "name" class="w3-input w3-border" type="text" name="Name" required>
       </div>
       <div class="w3-group">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input id = "email" class="w3-input w3-border" type="text" name="Email" required>
       </div>
       <div class="w3-group">
         <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <input id = "message" class="w3-input w3-border" type="text" name="Message" required>
       </div>
       <button type="sendMail" class="w3-btn-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
@@ -177,12 +177,9 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 function sendMail() {
-    var link = "mailto:me@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
-
+    var link = 'mailto:hello@domain.com?subject=Message from '
+             +document.getElementById('email').value
+             +'&body='+document.getElementById('email').value;
     window.location.href = link;
 }
 </script>
